@@ -1,0 +1,11 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 3em;
+    width: 1300px;
+}
+
+span>#foot{
+    color: aliceblue;
+}
+

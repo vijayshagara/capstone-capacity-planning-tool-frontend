@@ -1,0 +1,17 @@
+.card {
+  float: left;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+.uitable {
+  margin-top: 150px !important;
+}
+
+#homecard {
+  background-color: aquamarine;
+}
+
+#hometable {
+  background-color: aquamarine;
+}
