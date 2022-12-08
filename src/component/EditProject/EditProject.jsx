@@ -25,7 +25,7 @@ const EditProject = () => {
     async function Apidata() {
       console.log(params.id);
       const response = await axios.get(
-        `http://localhost:5000/project/get/${params.id}`
+        `https://planning-tool-for-an-office.onrender.com/project/get/${params.id}`
       );
       // setGet(response.data);
       console.log(response.data[0]);
