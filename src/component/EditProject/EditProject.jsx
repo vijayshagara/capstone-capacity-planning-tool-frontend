@@ -19,7 +19,7 @@ const EditProject = () => {
     startingDate: "",
     endingDate: "",
   });
-  const [data, setData] = useState([]);
+  
 
   useEffect(() => {
     async function Apidata() {
@@ -50,17 +50,13 @@ const EditProject = () => {
     const response = await axios.put(
       `https://planning-tool-for-an-office.onrender.com/update/${params.id}`,
       {
-        ...data,
+        projectName: formData.projectName,
+        price: formData.price,
+        startingDate: formData.startingDate,
+        endingDate: formData.endingDate,
       }
     );
-    console.log(response.data.value);
-    //setData(response.data.value);
-    //console.log([...data]);
-    let users = [...data];
-    let index = data.findIndex((row) => row.id === editedData.id);
-    users[index] = response.data.value;
-    setData(users[index]);
-    if (response) {
+   if (response) {
       navigate("/home");
     }
   };
