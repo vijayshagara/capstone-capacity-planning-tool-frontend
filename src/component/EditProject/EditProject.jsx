@@ -48,7 +48,7 @@ const EditProject = () => {
     //console.log(params.id);
 
     const response = await axios.put(
-      `https://planning-tool-for-an-office.onrender.com/update/${params.id}`,
+      `https://planning-tool-for-an-office.onrender.com/project/update/${params.id}`,
       {
         projectName: formData.projectName,
         price: formData.price,
